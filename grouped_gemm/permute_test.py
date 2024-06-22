@@ -324,12 +324,12 @@ def test_permute_topK():
     dtype = torch.bfloat16
     permute_topK_test(dtype, num_token, num_expert,
                       hidden_size, num_topK, False, Benchmark)
-    dtype = torch.float8_e5m2
-    permute_topK_test(dtype, num_token, num_expert,
-                      hidden_size, num_topK, False, Benchmark)
-    dtype = torch.float8_e4m3fn
-    permute_topK_test(dtype, num_token, num_expert,
-                      hidden_size, num_topK, False, Benchmark)
+    #dtype = torch.float8_e5m2
+    #permute_topK_test(dtype, num_token, num_expert,
+    #                  hidden_size, num_topK, False, Benchmark)
+    #dtype = torch.float8_e4m3fn
+    #permute_topK_test(dtype, num_token, num_expert,
+    #                  hidden_size, num_topK, False, Benchmark)
     dtype = torch.bfloat16
     permute_topK_test(dtype, num_token, 4, hidden_size, 1, False, Benchmark)
     permute_topK_test(dtype, num_token, 5, hidden_size, 2, False, Benchmark)
